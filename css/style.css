@@ -1,0 +1,40 @@
+.child-box {
+	width: 150px;
+	height: 150px;
+	background-color: blue;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+
+	transition: all 0.3s linear;
+
+	
+}
+.wraper {
+	position: relative;
+	width: 400px;
+	height: 400px;
+	background-color: yellow;
+	
+	/*transition-property: all; */					/*რაზე ვმოქმედებ*/
+	/*transition-duration: 0.5s; */					/*ციკლის ხანგრძლივობა*/
+	/*transition-timing-function: linear;*/			/*სიჩქარე. რა სისწრაფით დაიწყოს და დაამთავროს*/
+	/*transition-delay: 3s;*/						/*რამდენ ხანში დაიწყოს ჩემი ანიმაცია*/
+
+	transition: all 0.5s linear 3s;
+}
+
+.wraper:hover {
+	background-color: red;
+}
+.child-box:hover {
+	background-color: lightblue;
+	transform: translate(-50%, -50%) rotate(0deg);
+}
+
+/*.wraper:hover .child-box {
+	background-color: grey;
+	width: 250px;
+}*/
+
